@@ -82,20 +82,12 @@ class MyHomePageState extends State<MyHomePage> {
       if (Platform.isAndroid) {
         await _facesdkPlugin
             .setActivation(
-                "MsWdfxxrgrmsqd/vmtzbXd53Y2FwTJ4NqA7zYu+b1TPOA1fPylOhUC6cXICq66M1Iyr9TMWkKWUX"
-                "bdkkB/kuq7N2gpufGvW0vtuqqFiJTJ/o1FChJ/essH09XUSa4OXa/DE6SLD2xHJTaWkWYvxjJXAk"
-                "4TzA8moO9fU82HHMLzC2hN6LAgT0ktMdeGY9fFXQYc83blh9YA/cXv6v1lcgc17dHT8wNkPd56Yo"
-                "YUGI2VxgH09pKOzIhHoGDCoeabwXUPCr5J+M0zm6ZeWTWK4TO1WK09klQN8QrYLbFxCIRxLEsptQ"
-                "3rkej8bndgb00V30MbsPm6JEVFOAONTsolLohg==")
+                "hg5pHCISumInoMXoR1FBlTDn9U7u6wNOmv+lV3WB2iM5v1v3LIgj6OmlOKL5j3tnDXx3UGIkWYelhFscPLZ9GdsQ7fgok1EpbBHvlsGDgxGA+smhrjttgoJB1CFdfI04g8tZcWFHneKCHaJgQ+rCLmrSIkzs9O2M5hivXUY+kb3wgtkWiL4vbXDUUdKkQjAh7dMvfrURZ1MtESp7meoTeUofqSD1eqrLSaR3iFcDMrUukPbjpwJ6hQonYkpAWTInTh8osptISPJsdu0+hyUzo3ITPXk/nck9++BaPa+HlRcDrOZCxOKjIcZzOH7QZ/yg7GsGQYDqmiWKSI6JWUJ/xQ==")
             .then((value) => facepluginState = value ?? -1);
       } else {
         await _facesdkPlugin
             .setActivation(
-                "P+uN1qrG1hSFytf3EGBVdPKu+2KDiKJGj01nGWmWc58DWR7P72CROC+6o+g/RvqSt0FhmRmD/bSp"
-                "axD+dIGBrh0XWziwe+h+aJ1pAlgTOYzrfNYsctlBPphIKFFRzLlB2xSC9/HHXl8gBK0HMyDkdJfj"
-                "HZG38yxZmzLF9U93VV0U77qDuDwH+BSAWTI/7n+9NDgCEq16UVVBI4orMhwqI/E/Qxu782wfMspP"
-                "PGudIU59bpSNia8p/e6korb6a9ORSLUX5NlhZw5mU/uhJp6725kFrpnxFHvp9XjWpJpB2WLf5dqW"
-                "AilE5RLVpljUesj6oS+zB2RRIpEyHTh1VNPcWA==")
+                "V6WBQAdNzrxJVEQFKUnfBU2narsb0locsRYMVkYEtYQtgZ7mlDzfYxZHpHegx+4mvsdA8xo4diouRRQaMDTcXvZds9/7daewYx+94Yftrfiem2bDtkeL/2Y8NhAIfuZg2f306T4JOG0ZUYbIVigiAw6pKpOAAeH82If4+w6HIsp326wCFRxK6LBq9+WoDeymFklkqI+BmNUDXv4g9q8DSx9IGpi0lMnIkJY2cE3kisDZ4vKUQMOXNEMvehPvzcKgDw1yuxFqAyJxoVAevoirZ+H2l2lGOaikXPQFnh5Y18mfULw46HjLtI8+z+8AClQIQfU5Hb4gpjiWp5pzNgP6Qg==")
             .then((value) => facepluginState = value ?? -1);
       }
 
