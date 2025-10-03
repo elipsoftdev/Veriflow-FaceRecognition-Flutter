@@ -260,7 +260,7 @@ class FaceRecognitionViewState extends State<FaceRecognitionView> {
             child: image != null
                 ? Image.memory(image, fit: BoxFit.cover)
                 : Container(
-                    color: Theme.of(context).colorScheme.surfaceVariant,
+                    color: Theme.of(context).colorScheme.surfaceContainerHighest,
                     child: Icon(Icons.person_rounded,
                         size: 64,
                         color: Theme.of(context).colorScheme.onSurfaceVariant),
@@ -368,7 +368,7 @@ class FaceRecognitionViewState extends State<FaceRecognitionView> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.surfaceVariant,
+        color: Theme.of(context).colorScheme.surfaceContainerHighest,
         borderRadius: BorderRadius.circular(12),
       ),
       child: Row(

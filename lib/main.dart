@@ -247,7 +247,7 @@ class MyHomePageState extends State<MyHomePage> {
         num randomNumber =
             10000 + Random().nextInt(10000); // from 0 upto 99 included
         Person person = Person(
-            name: 'User' + randomNumber.toString(),
+            name: 'User$randomNumber',
             faceJpg: face['faceJpg'],
             templates: face['templates']);
         insertPerson(person);

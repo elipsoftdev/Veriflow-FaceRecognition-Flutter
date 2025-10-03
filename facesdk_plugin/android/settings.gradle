@@ -1,2 +1,46 @@
-rootProject.name = 'facesdk_plugin'
-include ':app'
+pluginManagement {
+    def props = new Properties()
+    file("local.properties").withInputStream { props.load(it) }
+    def flutterSdkPath = props.getProperty("flutter.sdk")
+    if (flutterSdkPath == null) {
+        throw new RuntimeException("flutter.sdk not set in local.properties")
+    }
+
+    includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
+
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+plugins {
+    id "com.android.library"
+    id "org.jetbrains.kotlin.android"
+    // NO: id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace "com.faceplugin.facesdk_plugin"
+    compileSdk 35
+
+    defaultConfig {
+        minSdk 24
+        ndk { abiFilters "arm64-v8a", "armeabi-v7a" }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions { jvmTarget = '17' }
+
+    packagingOptions { doNotStrip "**/*.so" }
+}
+
+repositories { google(); mavenCentral() }
+
+dependencies {
+    implementation "io.fotoapparat:fotoapparat:2.7.0"
+}
