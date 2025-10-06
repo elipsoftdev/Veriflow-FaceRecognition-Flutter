@@ -1,0 +1,8 @@
+C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\kotlin\com\faceplugin\facesdk_plugin\CameraXPlatformView.kt
+C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\kotlin\com\faceplugin\facesdk_plugin\YuvToRgbConverter.kt
+C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\kotlin\com\faceplugin\facesdk_plugin\FacesdkPlugin.kt
+C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\kotlin\com\faceplugin\facesdk_plugin\FaceAnalyzer.kt
+C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\kotlin\com\faceplugin\facesdk_plugin\CameraBaseView.kt
+C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\kotlin\com\faceplugin\facesdk_plugin\CameraXPlatformViewFactory.kt
+C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\kotlin\com\faceplugin\facesdk_plugin\FrameProcessor.kt
+C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\kotlin\com\faceplugin\facesdk_plugin\CameraXController.kt

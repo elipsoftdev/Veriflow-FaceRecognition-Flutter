@@ -2,9 +2,10 @@ import 'dart:async';
 
 import 'package:facerecognition_flutter/utils/color_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
+// ignore: depend_on_referenced_packages
 import 'package:shared_preferences/shared_preferences.dart';
+// ignore: depend_on_referenced_packages
 import 'package:fluttertoast/fluttertoast.dart';
 import 'main.dart';
 
@@ -24,11 +25,6 @@ class LivenessDetectionLevel {
   LivenessDetectionLevel(this.levelName, this.levelValue);
 }
 
-const double _kItemExtent = 40.0;
-const List<String> _livenessLevelNames = <String>[
-  'Best Accuracy',
-  'Light Weight',
-];
 
 class SettingsPageState extends State<SettingsPage> {
   bool _cameraLens = false;
@@ -38,7 +34,6 @@ class SettingsPageState extends State<SettingsPage> {
     LivenessDetectionLevel('Best Accuracy', 0),
     LivenessDetectionLevel('Light Weight', 1),
   ];
-  int _selectedLivenessLevel = 0;
 
   final livenessController = TextEditingController();
   final identifyController = TextEditingController();
@@ -79,7 +74,6 @@ class SettingsPageState extends State<SettingsPage> {
   Future<void> loadSettings() async {
     final prefs = await SharedPreferences.getInstance();
     var cameraLens = prefs.getInt("camera_lens");
-    var livenessLevel = prefs.getInt("liveness_level");
     var livenessThreshold = prefs.getString("liveness_threshold");
     var identifyThreshold = prefs.getString("identify_threshold");
 
@@ -87,7 +81,6 @@ class SettingsPageState extends State<SettingsPage> {
       _cameraLens = cameraLens == 1 ? true : false;
       _livenessThreshold = livenessThreshold ?? "0.7";
       _identifyThreshold = identifyThreshold ?? "0.8";
-      _selectedLivenessLevel = livenessLevel ?? 0;
       livenessController.text = _livenessThreshold;
       identifyController.text = _identifyThreshold;
     });
@@ -168,26 +161,6 @@ class SettingsPageState extends State<SettingsPage> {
   }
 
 // This shows a CupertinoModalPopup with a reasonable fixed height which hosts CupertinoPicker.
-  void _showDialog(Widget child) {
-    showCupertinoModalPopup<void>(
-      context: context,
-      builder: (BuildContext context) => Container(
-        height: 216,
-        padding: const EdgeInsets.only(top: 6.0),
-        // The Bottom margin is provided to align the popup above the system navigation bar.
-        margin: EdgeInsets.only(
-          bottom: MediaQuery.of(context).viewInsets.bottom,
-        ),
-        // Provide a background color for the popup.
-        color: CupertinoColors.systemBackground.resolveFrom(context),
-        // Use a SafeArea widget to avoid system overlaps.
-        child: SafeArea(
-          top: false,
-          child: child,
-        ),
-      ),
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -366,39 +339,6 @@ class SettingsPageState extends State<SettingsPage> {
     );
   }
 
-  void _showLevelPicker() {
-    showModalBottomSheet(
-      context: context,
-      builder: (context) => Container(
-        padding: const EdgeInsets.all(24),
-        decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surface,
-          borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text('Select Liveness Level',
-                style: Theme.of(context).textTheme.titleLarge),
-            const SizedBox(height: 16),
-            ...List.generate(
-              _livenessLevelNames.length,
-              (index) => RadioListTile<int>(
-                title: Text(_livenessLevelNames[index]),
-                value: index,
-                groupValue: _selectedLivenessLevel,
-                onChanged: (value) {
-                  setState(() => _selectedLivenessLevel = value!);
-                  updateLivenessLevel(value!);
-                  Navigator.pop(context);
-                },
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
 
   void _showThresholdDialog({
     required BuildContext context,

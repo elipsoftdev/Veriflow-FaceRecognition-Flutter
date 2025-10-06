@@ -10,7 +10,6 @@ import 'model/person.dart';
 
 class FaceRecognitionView extends StatefulWidget {
   final List<Person> personList;
-  FaceDetectionViewController? faceDetectionViewController;
 
   FaceRecognitionView({super.key, required this.personList});
 
@@ -489,7 +488,7 @@ class FacePainter extends CustomPainter {
 
 class FaceDetectionView extends StatefulWidget
     implements FaceDetectionInterface {
-  FaceRecognitionViewState faceRecognitionViewState;
+  final FaceRecognitionViewState faceRecognitionViewState;
 
   FaceDetectionView({super.key, required this.faceRecognitionViewState});
 

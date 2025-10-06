@@ -1,0 +1,264 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.faceplugin.facerecognition_flutter"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="36" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\src\debug\AndroidManifest.xml:6:22-64
+16    <!--
+17     Required to query activities that can process text, see:
+18         https://developer.android.com/training/package-visibility and
+19         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+20
+21         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+22    -->
+23    <queries>
+23-->C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\src\main\AndroidManifest.xml:39:5-44:15
+24        <intent>
+24-->C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\src\main\AndroidManifest.xml:40:9-43:18
+25            <action android:name="android.intent.action.PROCESS_TEXT" />
+25-->C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\src\main\AndroidManifest.xml:41:13-72
+25-->C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\src\main\AndroidManifest.xml:41:21-70
+26
+27            <data android:mimeType="text/plain" />
+27-->C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\src\main\AndroidManifest.xml:42:13-50
+27-->C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\src\main\AndroidManifest.xml:42:19-48
+28        </intent>
+29    </queries>
+30
+31    <uses-permission android:name="android.permission.CAMERA" />
+31-->[:facesdk_plugin] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\facesdk_plugin\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-65
+31-->[:facesdk_plugin] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\facesdk_plugin\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:22-62
+32
+33    <uses-feature android:name="android.hardware.camera" />
+33-->[:facesdk_plugin] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\facesdk_plugin\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:5-60
+33-->[:facesdk_plugin] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\facesdk_plugin\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:19-57
+34
+35    <permission
+35-->[androidx.core:core:1.13.1] C:\Users\prosp\.gradle\caches\8.10.2\transforms\cd52385ce4d721afa9707f9b8d6e2415\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+36        android:name="com.faceplugin.facerecognition_flutter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+36-->[androidx.core:core:1.13.1] C:\Users\prosp\.gradle\caches\8.10.2\transforms\cd52385ce4d721afa9707f9b8d6e2415\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+37        android:protectionLevel="signature" />
+37-->[androidx.core:core:1.13.1] C:\Users\prosp\.gradle\caches\8.10.2\transforms\cd52385ce4d721afa9707f9b8d6e2415\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+38
+39    <uses-permission android:name="com.faceplugin.facerecognition_flutter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+39-->[androidx.core:core:1.13.1] C:\Users\prosp\.gradle\caches\8.10.2\transforms\cd52385ce4d721afa9707f9b8d6e2415\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+39-->[androidx.core:core:1.13.1] C:\Users\prosp\.gradle\caches\8.10.2\transforms\cd52385ce4d721afa9707f9b8d6e2415\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+40    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+41    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+41-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\1a483299ed041b603f788dfcb5320a14\transformed\jetified-transport-backend-cct-3.1.0\AndroidManifest.xml:25:5-79
+41-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\1a483299ed041b603f788dfcb5320a14\transformed\jetified-transport-backend-cct-3.1.0\AndroidManifest.xml:25:22-76
+42
+43    <application
+44        android:name="android.app.Application"
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.13.1] C:\Users\prosp\.gradle\caches\8.10.2\transforms\cd52385ce4d721afa9707f9b8d6e2415\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+46        android:debuggable="true"
+47        android:extractNativeLibs="false"
+48        android:icon="@mipmap/ic_launcher"
+49        android:label="facerecognition_flutter" >
+50        <activity
+51            android:name="com.faceplugin.facerecognition_flutter.MainActivity"
+52            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+53            android:exported="true"
+54            android:hardwareAccelerated="true"
+55            android:launchMode="singleTop"
+56            android:taskAffinity=""
+57            android:theme="@style/LaunchTheme"
+58            android:windowSoftInputMode="adjustResize" >
+59
+60            <!--
+61                 Specifies an Android theme to apply to this Activity as soon as
+62                 the Android process has started. This theme is visible to the user
+63                 while the Flutter UI initializes. After that, this theme continues
+64                 to determine the Window background behind the Flutter UI.
+65            -->
+66            <meta-data
+67                android:name="io.flutter.embedding.android.NormalTheme"
+68                android:resource="@style/NormalTheme" />
+69
+70            <intent-filter>
+71                <action android:name="android.intent.action.MAIN" />
+72
+73                <category android:name="android.intent.category.LAUNCHER" />
+74            </intent-filter>
+75        </activity>
+76        <!--
+77             Don't delete the meta-data below.
+78             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+79        -->
+80        <meta-data
+81            android:name="flutterEmbedding"
+82            android:value="2" />
+83
+84        <service
+84-->[androidx.camera:camera-camera2:1.3.4] C:\Users\prosp\.gradle\caches\8.10.2\transforms\e7e105c98972fd1e18074803d5a159c5\transformed\jetified-camera-camera2-1.3.4\AndroidManifest.xml:24:9-33:19
+85            android:name="androidx.camera.core.impl.MetadataHolderService"
+85-->[androidx.camera:camera-camera2:1.3.4] C:\Users\prosp\.gradle\caches\8.10.2\transforms\e7e105c98972fd1e18074803d5a159c5\transformed\jetified-camera-camera2-1.3.4\AndroidManifest.xml:25:13-75
+86            android:enabled="false"
+86-->[androidx.camera:camera-camera2:1.3.4] C:\Users\prosp\.gradle\caches\8.10.2\transforms\e7e105c98972fd1e18074803d5a159c5\transformed\jetified-camera-camera2-1.3.4\AndroidManifest.xml:26:13-36
+87            android:exported="false" >
+87-->[androidx.camera:camera-camera2:1.3.4] C:\Users\prosp\.gradle\caches\8.10.2\transforms\e7e105c98972fd1e18074803d5a159c5\transformed\jetified-camera-camera2-1.3.4\AndroidManifest.xml:27:13-37
+88            <meta-data
+88-->[androidx.camera:camera-camera2:1.3.4] C:\Users\prosp\.gradle\caches\8.10.2\transforms\e7e105c98972fd1e18074803d5a159c5\transformed\jetified-camera-camera2-1.3.4\AndroidManifest.xml:30:13-32:89
+89                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+89-->[androidx.camera:camera-camera2:1.3.4] C:\Users\prosp\.gradle\caches\8.10.2\transforms\e7e105c98972fd1e18074803d5a159c5\transformed\jetified-camera-camera2-1.3.4\AndroidManifest.xml:31:17-103
+90                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+90-->[androidx.camera:camera-camera2:1.3.4] C:\Users\prosp\.gradle\caches\8.10.2\transforms\e7e105c98972fd1e18074803d5a159c5\transformed\jetified-camera-camera2-1.3.4\AndroidManifest.xml:32:17-86
+91        </service>
+92
+93        <provider
+93-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:9-17:20
+94            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+94-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-82
+95            android:authorities="com.faceplugin.facerecognition_flutter.flutter.image_provider"
+95-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-74
+96            android:exported="false"
+96-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:13-37
+97            android:grantUriPermissions="true" >
+97-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-47
+98            <meta-data
+98-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-16:75
+99                android:name="android.support.FILE_PROVIDER_PATHS"
+99-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:17-67
+100                android:resource="@xml/flutter_image_picker_file_paths" />
+100-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:17-72
+101        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+102        <service
+102-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:9-31:19
+103            android:name="com.google.android.gms.metadata.ModuleDependencies"
+103-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:13-78
+104            android:enabled="false"
+104-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:13-36
+105            android:exported="false" >
+105-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:22:13-37
+106            <intent-filter>
+106-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:24:13-26:29
+107                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+107-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:17-94
+107-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:25-91
+108            </intent-filter>
+109
+110            <meta-data
+110-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:28:13-30:36
+111                android:name="photopicker_activity:0:required"
+111-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:29:17-63
+112                android:value="" />
+112-->[:image_picker_android] C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:30:17-33
+113        </service>
+114
+115        <uses-library
+115-->[androidx.window:window:1.2.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\0afd2264187d0923840df1f6f4e24c73\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+116            android:name="androidx.window.extensions"
+116-->[androidx.window:window:1.2.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\0afd2264187d0923840df1f6f4e24c73\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+117            android:required="false" />
+117-->[androidx.window:window:1.2.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\0afd2264187d0923840df1f6f4e24c73\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+118        <uses-library
+118-->[androidx.window:window:1.2.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\0afd2264187d0923840df1f6f4e24c73\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+119            android:name="androidx.window.sidecar"
+119-->[androidx.window:window:1.2.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\0afd2264187d0923840df1f6f4e24c73\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+120            android:required="false" />
+120-->[androidx.window:window:1.2.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\0afd2264187d0923840df1f6f4e24c73\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+121
+122        <provider
+122-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\9003c91330231b72be795502e26ca817\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+123            android:name="androidx.startup.InitializationProvider"
+123-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\9003c91330231b72be795502e26ca817\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+124            android:authorities="com.faceplugin.facerecognition_flutter.androidx-startup"
+124-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\9003c91330231b72be795502e26ca817\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+125            android:exported="false" >
+125-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\9003c91330231b72be795502e26ca817\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+126            <meta-data
+126-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\9003c91330231b72be795502e26ca817\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+127                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+127-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\9003c91330231b72be795502e26ca817\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+128                android:value="androidx.startup" />
+128-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\9003c91330231b72be795502e26ca817\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+129            <meta-data
+129-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+130                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+130-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+131                android:value="androidx.startup" />
+131-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+132        </provider>
+133
+134        <receiver
+134-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+135            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+135-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+136            android:directBootAware="false"
+136-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+137            android:enabled="true"
+137-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+138            android:exported="true"
+138-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+139            android:permission="android.permission.DUMP" >
+139-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+141                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+141-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+142            </intent-filter>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+144                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+144-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+147                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+147-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+147-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+148            </intent-filter>
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+150                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+150-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+150-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\91d0b824173567237bb2cd48b2d8e4ac\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+151            </intent-filter>
+152        </receiver>
+153
+154        <service
+154-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\1a483299ed041b603f788dfcb5320a14\transformed\jetified-transport-backend-cct-3.1.0\AndroidManifest.xml:29:9-35:19
+155            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+155-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\1a483299ed041b603f788dfcb5320a14\transformed\jetified-transport-backend-cct-3.1.0\AndroidManifest.xml:30:13-103
+156            android:exported="false" >
+156-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\1a483299ed041b603f788dfcb5320a14\transformed\jetified-transport-backend-cct-3.1.0\AndroidManifest.xml:31:13-37
+157            <meta-data
+157-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\1a483299ed041b603f788dfcb5320a14\transformed\jetified-transport-backend-cct-3.1.0\AndroidManifest.xml:32:13-34:39
+158                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+158-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\1a483299ed041b603f788dfcb5320a14\transformed\jetified-transport-backend-cct-3.1.0\AndroidManifest.xml:33:17-94
+159                android:value="cct" />
+159-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\1a483299ed041b603f788dfcb5320a14\transformed\jetified-transport-backend-cct-3.1.0\AndroidManifest.xml:34:17-36
+160        </service>
+161        <service
+161-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\ab30e4e98fdb707a005b83b85d14fee2\transformed\jetified-transport-runtime-3.1.0\AndroidManifest.xml:26:9-30:19
+162            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+162-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\ab30e4e98fdb707a005b83b85d14fee2\transformed\jetified-transport-runtime-3.1.0\AndroidManifest.xml:27:13-117
+163            android:exported="false"
+163-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\ab30e4e98fdb707a005b83b85d14fee2\transformed\jetified-transport-runtime-3.1.0\AndroidManifest.xml:28:13-37
+164            android:permission="android.permission.BIND_JOB_SERVICE" >
+164-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\ab30e4e98fdb707a005b83b85d14fee2\transformed\jetified-transport-runtime-3.1.0\AndroidManifest.xml:29:13-69
+165        </service>
+166
+167        <receiver
+167-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\ab30e4e98fdb707a005b83b85d14fee2\transformed\jetified-transport-runtime-3.1.0\AndroidManifest.xml:32:9-34:40
+168            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+168-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\ab30e4e98fdb707a005b83b85d14fee2\transformed\jetified-transport-runtime-3.1.0\AndroidManifest.xml:33:13-132
+169            android:exported="false" />
+169-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\prosp\.gradle\caches\8.10.2\transforms\ab30e4e98fdb707a005b83b85d14fee2\transformed\jetified-transport-runtime-3.1.0\AndroidManifest.xml:34:13-37
+170    </application>
+171
+172</manifest>

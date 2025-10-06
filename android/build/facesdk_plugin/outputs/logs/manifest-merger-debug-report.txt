@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\AndroidManifest.xml:1:70-109
+		INJECTED from C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\AndroidManifest.xml:3:3-63
+	android:name
+		ADDED from C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\AndroidManifest.xml:3:20-60
+uses-feature#android.hardware.camera
+ADDED from C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\AndroidManifest.xml:5:3-58
+	android:name
+		ADDED from C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\AndroidManifest.xml:5:17-55
+uses-sdk
+INJECTED from C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\AndroidManifest.xml
+INJECTED from C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\src\main\AndroidManifest.xml
