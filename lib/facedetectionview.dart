@@ -11,7 +11,7 @@ import 'model/person.dart';
 class FaceRecognitionView extends StatefulWidget {
   final List<Person> personList;
 
-  FaceRecognitionView({super.key, required this.personList});
+  const FaceRecognitionView({super.key, required this.personList});
 
   @override
   State<FaceRecognitionView> createState() => FaceRecognitionViewState();
@@ -490,7 +490,7 @@ class FaceDetectionView extends StatefulWidget
     implements FaceDetectionInterface {
   final FaceRecognitionViewState faceRecognitionViewState;
 
-  FaceDetectionView({super.key, required this.faceRecognitionViewState});
+  const FaceDetectionView({super.key, required this.faceRecognitionViewState});
 
   @override
   Future<void> onFaceDetected(faces) async {
