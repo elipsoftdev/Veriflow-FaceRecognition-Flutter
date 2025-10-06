@@ -2,11 +2,21 @@ pluginManagement {
     def props = new Properties()
     file("local.properties").withInputStream { props.load(it) }
     def flutterSdkPath = props.getProperty("flutter.sdk")
-    if (flutterSdkPath == null) throw new RuntimeException("flutter.sdk not set in local.properties")
+    if (flutterSdkPath == null) {
+        throw new RuntimeException("flutter.sdk not set in local.properties")
+    }
     includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
-    repositories { google(); mavenCentral(); gradlePluginPortal() }
+
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
 }
 
-plugins { id "dev.flutter.flutter-plugin-loader" version "1.0.0" }
+plugins {
+    id "dev.flutter.flutter-plugin-loader" version "1.0.0"
+}
 
+// incluye solo los módulos de la app host
 include(":app")

@@ -1,17 +1,136 @@
 {
-    "cSpell.words": [
-        "blackbg",
-        "Cupertino",
-        "exif",
-        "facedetectionview",
-        "faceplugin",
-        "facerecognition",
-        "facesdk",
-        "fluttertoast",
-        "personview",
-        "prefs",
-        "Schyler",
-        "sqflite",
-        "upto"
-    ]
+  "yaml.schemas": {
+    "file:///c%3A/Users/prosp/.vscode/extensions/atlassian.atlascode-3.8.20/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+
+  // === Bloquea la inyección Gradle de Red Hat Java en este workspace ===
+  "java.import.gradle.enabled": false,
+  "java.import.maven.enabled": false,
+  "java.configuration.updateBuildConfiguration": "disabled",
+  "java.import.gradle.wrapper.enabled": true,
+  // (Opcional) si igualmente importas proyectos Java puros, usa este JDK 17:
+  "java.import.gradle.java.home": "C:\\jdk-17.0.10+7",
+
+  // === No fuerces JAVA 21 en la terminal del workspace ===
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.automationProfile.windows": { "path": "powershell" },
+  "terminal.integrated.env.windows": {
+    "JAVA_HOME": "C:\\jdk-17.0.10+7",
+    "PATH": "C:\\jdk-17.0.10+7\\bin;${env:PATH}"
+  },
+
+  // === Limpia perfiles que imponían JAVA 21 (los dejamos pero no por defecto) ===
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": { "path": "powershell.exe" },
+    "Command Prompt": { "path": "cmd.exe" },
+    "JavaSE-17 LTS": {
+      "overrideName": true,
+      "env": {
+        "PATH": "C:\\Users\\prosp\\AppData\\Roaming\\Code\\User\\globalStorage\\pleiades.java-extension-pack-jdk\\java\\17\\bin;${env:PATH}",
+        "JAVA_HOME": "C:\\Users\\prosp\\AppData\\Roaming\\Code\\User\\globalStorage\\pleiades.java-extension-pack-jdk\\java\\17"
+      },
+      "path": "cmd"
+    }
+  },
+
+  // === Android SDK correcto para AVD Manager ===
+  "avdmanager.sdkPath": "C:\\Users\\prosp\\AppData\\Local\\Android\\Sdk",
+  "avdmanager.executable": "C:\\Users\\prosp\\AppData\\Local\\Android\\Sdk\\cmdline-tools\\latest\\bin\\avdmanager.bat",
+
+  // === Mantengo tus preferencias existentes (edición/estética/productividad) ===
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "cmake.options.statusBarVisibility": "compact",
+  "cmake.configureOnOpen": true,
+  "cmake.showOptionsMovedNotification": false,
+  "cmake.generator": "\"cmake.generator\": \"Ninja\"",
+  "cmake.cmakePath": "C:\\cmake-3.29.3-windows-x86_64\\bin\\cmake.exe",
+  "atlascode.jira.jqlList": [
+    {
+      "id": "770c1705-e66c-48a5-8e29-034a8fdbe8f6",
+      "enabled": true,
+      "name": "My elipsoft-tecnologia Issues",
+      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+      "siteId": "8dcc5693-77d6-47b9-8930-430ae9ac90bb",
+      "monitor": true
+    }
+  ],
+  "redhat.telemetry.enabled": true,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "workbench.colorCustomizations": {
+    "[Default Dark Modern]": {
+      "tab.activeBorderTop": "#00FF00",
+      "tab.unfocusedActiveBorderTop": "#00FF0088",
+      "textCodeBlock.background": "#00000055"
+    },
+    "editor.wordHighlightStrongBorder": "#FF6347",
+    "editor.wordHighlightBorder": "#FFD700",
+    "editor.selectionHighlightBorder": "#A9A9A9"
+  },
+  "workbench.editor.revealIfOpen": true,
+  "workbench.tree.indent": 20,
+  "files.eol": "\n",
+  "[bat]": { "files.eol": "\r\n" },
+  "cSpell.diagnosticLevel": "Hint",
+  "trailing-spaces.backgroundColor": "rgba(255,0,0,0.1)",
+  "trailing-spaces.includeEmptyLines": false,
+  "terminal.integrated.tabs.hideCondition": "never",
+  "terminal.integrated.enablePersistentSessions": false,
+  "java.debug.settings.hotCodeReplace": "auto",
+  "java.sources.organizeImports.staticStarThreshold": 1,
+  "java.configuration.runtimes": [
+    { "name": "JavaSE-17", "path": "C:\\Users\\prosp\\AppData\\Roaming\\Code\\User\\globalStorage\\pleiades.java-extension-pack-jdk\\java\\17", "default": true }
+  ],
+  "launch": { "configurations": [] },
+  "Latino-propiedades.RutaBinarioLatino": "C:/Program Files/Latino/bin/latino.exe",
+  "editor.codeActionsOnSave": { "source.organizeImports": "explicit" },
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.rulers": [
+    { "column": 80, "color": "#00FF0010" },
+    { "column": 100, "color": "#BDB76B15" },
+    { "column": 120, "color": "#FA807219" }
+  ],
+  "editor.unicodeHighlight.includeComments": true,
+  "emmet.variables": { "lang": "es" },
+  "workbench.editor.enablePreview": false,
+  "git.autofetch": true,
+  "git.ignoreRebaseWarning": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "gitlens.rebaseEditor.ordering": "asc",
+  "files.autoSave": "afterDelay",
+  "explorer.confirmDragAndDrop": false,
+  "java.maxConcurrentBuilds": 12,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": { "other": true, "comments": false, "strings": true },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": { "editor.defaultFormatter": "redhat.vscode-yaml" },
+  "jdk.telemetry.enabled": true,
+  "dart.flutterSdkPaths": ["C:\\tools\\flutter"],
+  "gradle.nestedProjects": false,
+  "workbench.settings.useSplitJSON": true,
+  "cSpell.userWords": [
+    "alianza",
+    "allprojects",
+    "appqrtest",
+    "qrlapiz",
+    "smartankplus"
+  ],
+  "cSpell.words": [
+    "faceplugin",
+    "facesdk",
+    "Schyler"
+  ]
 }

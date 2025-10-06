@@ -18,7 +18,7 @@ class PersonView extends StatefulWidget {
 }
 
 class _PersonViewState extends State<PersonView> {
-  deletePerson(int index) async {
+  Future<void> deletePerson(int index) async {
     try {
       await widget.homePageState.deletePerson(index);
     } catch (e) {
