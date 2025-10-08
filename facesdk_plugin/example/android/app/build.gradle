@@ -1,79 +1,55 @@
-// facesdk_plugin/example/android/app/build.gradle  (Groovy)
-
-import java.util.Properties
-import org.gradle.api.GradleException   // ← esto arregla “unable to resolve class GradleException”
+// facesdk_plugin/example/android/app/build.gradle
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
 
 def localProperties = new Properties()
-def localPropertiesFile = rootProject.file('local.properties')
+def localPropertiesFile = rootProject.file("local.properties")
 if (localPropertiesFile.exists()) {
-    localPropertiesFile.withReader('UTF-8') { reader ->
-        localProperties.load(reader)
-    }
+    localPropertiesFile.withReader("UTF-8") { reader -> localProperties.load(reader) }
 }
-
-def flutterRoot = localProperties.getProperty('flutter.sdk')
-if (flutterRoot == null) {
-    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
-}
-
-def flutterVersionCode = (localProperties.getProperty('flutter.versionCode') ?: '1')
-def flutterVersionName = (localProperties.getProperty('flutter.versionName') ?: '1.0')
-
-plugins {
-    id "com.android.application"
-    id "org.jetbrains.kotlin.android"
-}
-
-apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
     namespace "com.faceplugin.facesdk_plugin_example"
-
-    // Toma valores del tooling de Flutter
-    compileSdkVersion flutter.compileSdkVersion
-    ndkVersion flutter.ndkVersion
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.faceplugin.facesdk_plugin_example"
-        minSdkVersion 24
-        targetSdkVersion flutter.targetSdkVersion
-        versionCode flutterVersionCode.toInteger()
-        versionName flutterVersionName
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
     }
 
-    // Java/Kotlin a 17
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
-    kotlinOptions {
-        jvmTarget = "17"
-    }
+    kotlinOptions { jvmTarget = "17" }
 
-    sourceSets {
-        main.java.srcDirs += 'src/main/kotlin'
+    packaging {
+        jniLibs.keepDebugSymbols += ["**/*.so"]
+        resources.excludes += ["META-INF/*"]
     }
 
     buildTypes {
-        debug {
+        debug  { minifyEnabled false }
+        release{
+            // Ajusta tu signing si lo necesitas
             minifyEnabled false
-            shrinkResources false
-        }
-        release {
-            // Si luego quieres optimizar tamaño, pon ambos a true y añade proguardFiles.
-            minifyEnabled false
-            shrinkResources false
-            signingConfig signingConfigs.debug
-            // proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), file("proguard-rules.pro")
         }
     }
 }
 
+// El plugin de Flutter está disponible por el loader en settings.gradle
 flutter {
-    source '../..'
+    source = "../.."
 }
 
 dependencies {
-    // Con el plugin org.jetbrains.kotlin.android ya no necesitas agregar manualmente la stdlib.
-    // Agrega aquí dependencias extra del ejemplo si las requieres.
+    implementation "androidx.core:core-ktx:1.12.0"
+    implementation "androidx.appcompat:appcompat:1.7.0"
+    implementation "com.google.android.material:material:1.12.0"
 }

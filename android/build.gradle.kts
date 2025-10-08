@@ -5,7 +5,7 @@ plugins {
     // Versions estables y compatibles con Flutter/Gradle 8.x
     id("com.android.application") version "8.7.2" apply false
     id("com.android.library")    version "8.7.2" apply false
-    id("org.jetbrains.kotlin.android") version "2.1.0" apply false
+    id("org.jetbrains.kotlin.android") apply false
 }
 
 // Repos para todos los subproyectos

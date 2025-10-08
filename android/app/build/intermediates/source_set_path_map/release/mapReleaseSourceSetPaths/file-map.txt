@@ -1,0 +1,47 @@
+com.faceplugin.facerecognition_flutter.app-jetified-lifecycle-process-2.7.0-0 C:\Users\prosp\.gradle\caches\8.13\transforms\06ac61553c665d55d1f4fafa1a721370\transformed\jetified-lifecycle-process-2.7.0\res
+com.faceplugin.facerecognition_flutter.app-coordinatorlayout-1.1.0-1 C:\Users\prosp\.gradle\caches\8.13\transforms\084a1bed0b4d40b71534b2d3505b532f\transformed\coordinatorlayout-1.1.0\res
+com.faceplugin.facerecognition_flutter.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-2 C:\Users\prosp\.gradle\caches\8.13\transforms\0942db576241f9dc05f61aabb01e00e0\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
+com.faceplugin.facerecognition_flutter.app-jetified-emoji2-views-helper-1.3.0-3 C:\Users\prosp\.gradle\caches\8.13\transforms\09834b5deb6aa2e716e18a8e5f669298\transformed\jetified-emoji2-views-helper-1.3.0\res
+com.faceplugin.facerecognition_flutter.app-material-1.12.0-4 C:\Users\prosp\.gradle\caches\8.13\transforms\0b36ce686deebf9e5fc269133c73ca0b\transformed\material-1.12.0\res
+com.faceplugin.facerecognition_flutter.app-core-runtime-2.2.0-5 C:\Users\prosp\.gradle\caches\8.13\transforms\1040fbcf93b7a5003b1d53e5c189fba3\transformed\core-runtime-2.2.0\res
+com.faceplugin.facerecognition_flutter.app-jetified-annotation-experimental-1.4.0-6 C:\Users\prosp\.gradle\caches\8.13\transforms\11e779b8d7500bd1dab696f476dfa2fb\transformed\jetified-annotation-experimental-1.4.0\res
+com.faceplugin.facerecognition_flutter.app-jetified-camera-lifecycle-1.3.4-7 C:\Users\prosp\.gradle\caches\8.13\transforms\17fa8aa001a3c3a14f66065de7c660d4\transformed\jetified-camera-lifecycle-1.3.4\res
+com.faceplugin.facerecognition_flutter.app-cardview-1.0.0-8 C:\Users\prosp\.gradle\caches\8.13\transforms\24fac96687e4f924e2e4f3a697506540\transformed\cardview-1.0.0\res
+com.faceplugin.facerecognition_flutter.app-jetified-appcompat-resources-1.7.0-9 C:\Users\prosp\.gradle\caches\8.13\transforms\254c3892ce04513e37f2021479d4f2f7\transformed\jetified-appcompat-resources-1.7.0\res
+com.faceplugin.facerecognition_flutter.app-jetified-savedstate-1.2.1-10 C:\Users\prosp\.gradle\caches\8.13\transforms\26b589b595139587aebb91c0c0b8a90a\transformed\jetified-savedstate-1.2.1\res
+com.faceplugin.facerecognition_flutter.app-jetified-window-1.2.0-11 C:\Users\prosp\.gradle\caches\8.13\transforms\286ac2867f9dca04d4f24a69a3efcea0\transformed\jetified-window-1.2.0\res
+com.faceplugin.facerecognition_flutter.app-jetified-camera-view-1.3.4-12 C:\Users\prosp\.gradle\caches\8.13\transforms\2fa9a699fccd89df386fd08acf4284bd\transformed\jetified-camera-view-1.3.4\res
+com.faceplugin.facerecognition_flutter.app-recyclerview-1.1.0-13 C:\Users\prosp\.gradle\caches\8.13\transforms\3bcfa4d9e5381c0fda0cae114ad8d7a5\transformed\recyclerview-1.1.0\res
+com.faceplugin.facerecognition_flutter.app-jetified-profileinstaller-1.3.1-14 C:\Users\prosp\.gradle\caches\8.13\transforms\47bee1d3a91fdacd3bb32bda389cb7f5\transformed\jetified-profileinstaller-1.3.1\res
+com.faceplugin.facerecognition_flutter.app-constraintlayout-2.0.1-15 C:\Users\prosp\.gradle\caches\8.13\transforms\47f06b60ae0fed9b04a66106363664ac\transformed\constraintlayout-2.0.1\res
+com.faceplugin.facerecognition_flutter.app-jetified-lifecycle-livedata-core-ktx-2.7.0-16 C:\Users\prosp\.gradle\caches\8.13\transforms\49b8dfb9e1bfe2af6fc7707f758fa656\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\res
+com.faceplugin.facerecognition_flutter.app-jetified-camera-camera2-1.3.4-17 C:\Users\prosp\.gradle\caches\8.13\transforms\4cda313d67a6b2c530840eb5ab363f04\transformed\jetified-camera-camera2-1.3.4\res
+com.faceplugin.facerecognition_flutter.app-jetified-activity-1.8.1-18 C:\Users\prosp\.gradle\caches\8.13\transforms\5797611a81bb7fa3d552bd7de908ffcd\transformed\jetified-activity-1.8.1\res
+com.faceplugin.facerecognition_flutter.app-jetified-startup-runtime-1.1.1-19 C:\Users\prosp\.gradle\caches\8.13\transforms\5fbfdb45652f046f4c07d8e54618251a\transformed\jetified-startup-runtime-1.1.1\res
+com.faceplugin.facerecognition_flutter.app-jetified-window-java-1.2.0-20 C:\Users\prosp\.gradle\caches\8.13\transforms\676a050c576a9868db265f84b7f37eb1\transformed\jetified-window-java-1.2.0\res
+com.faceplugin.facerecognition_flutter.app-drawerlayout-1.1.1-21 C:\Users\prosp\.gradle\caches\8.13\transforms\6bbe2f80c32a329b40fac1723e63e8f4\transformed\drawerlayout-1.1.1\res
+com.faceplugin.facerecognition_flutter.app-lifecycle-livedata-core-2.7.0-22 C:\Users\prosp\.gradle\caches\8.13\transforms\81f24199cb7a422a020f2e30620a9e99\transformed\lifecycle-livedata-core-2.7.0\res
+com.faceplugin.facerecognition_flutter.app-core-1.13.1-23 C:\Users\prosp\.gradle\caches\8.13\transforms\86ee07b375bfdf34b31f17097b9f0fe5\transformed\core-1.13.1\res
+com.faceplugin.facerecognition_flutter.app-jetified-tracing-1.2.0-24 C:\Users\prosp\.gradle\caches\8.13\transforms\890f3400d10393e85b8105cd6a7e7ae2\transformed\jetified-tracing-1.2.0\res
+com.faceplugin.facerecognition_flutter.app-appcompat-1.7.0-25 C:\Users\prosp\.gradle\caches\8.13\transforms\97d05b889918476a8c4ffce4dc047222\transformed\appcompat-1.7.0\res
+com.faceplugin.facerecognition_flutter.app-lifecycle-viewmodel-2.7.0-26 C:\Users\prosp\.gradle\caches\8.13\transforms\9c303c2c24f82054c197224fa74fa2eb\transformed\lifecycle-viewmodel-2.7.0\res
+com.faceplugin.facerecognition_flutter.app-jetified-viewpager2-1.0.0-27 C:\Users\prosp\.gradle\caches\8.13\transforms\9ce0367ffb1dd54e2531fa966e41c1d0\transformed\jetified-viewpager2-1.0.0\res
+com.faceplugin.facerecognition_flutter.app-jetified-core-1.0.0-28 C:\Users\prosp\.gradle\caches\8.13\transforms\9f1e2879792bbb8158e25b6a68256bd9\transformed\jetified-core-1.0.0\res
+com.faceplugin.facerecognition_flutter.app-lifecycle-livedata-2.7.0-29 C:\Users\prosp\.gradle\caches\8.13\transforms\a0c0a2994ac621ae3ecd10ea97313184\transformed\lifecycle-livedata-2.7.0\res
+com.faceplugin.facerecognition_flutter.app-lifecycle-runtime-2.7.0-30 C:\Users\prosp\.gradle\caches\8.13\transforms\a33e6d160051dca821f3737f321ea40f\transformed\lifecycle-runtime-2.7.0\res
+com.faceplugin.facerecognition_flutter.app-fragment-1.7.1-31 C:\Users\prosp\.gradle\caches\8.13\transforms\ae8d2a0bacd9b18a1959b1f29af36235\transformed\fragment-1.7.1\res
+com.faceplugin.facerecognition_flutter.app-jetified-core-ktx-1.13.1-32 C:\Users\prosp\.gradle\caches\8.13\transforms\bdd59d5716a58ec5b02264d064756721\transformed\jetified-core-ktx-1.13.1\res
+com.faceplugin.facerecognition_flutter.app-jetified-emoji2-1.3.0-33 C:\Users\prosp\.gradle\caches\8.13\transforms\e4b3dd87a6c2d6028daf4bcf94d8468f\transformed\jetified-emoji2-1.3.0\res
+com.faceplugin.facerecognition_flutter.app-jetified-camera-core-1.3.4-34 C:\Users\prosp\.gradle\caches\8.13\transforms\e60043fbe26ecd85ddf6427df10e3a9c\transformed\jetified-camera-core-1.3.4\res
+com.faceplugin.facerecognition_flutter.app-jetified-camera-video-1.3.4-35 C:\Users\prosp\.gradle\caches\8.13\transforms\e94ac1459683952df3de89b021d7498d\transformed\jetified-camera-video-1.3.4\res
+com.faceplugin.facerecognition_flutter.app-transition-1.5.0-36 C:\Users\prosp\.gradle\caches\8.13\transforms\f390510aa85b7e31d9b7577fa35b3bbf\transformed\transition-1.5.0\res
+com.faceplugin.facerecognition_flutter.app-release-37 C:\Users\prosp\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_exif_rotation-0.5.2\android\build\intermediates\packaged_res\release\packageReleaseResources
+com.faceplugin.facerecognition_flutter.app-pngs-38 C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\build\generated\res\pngs\release
+com.faceplugin.facerecognition_flutter.app-resValues-39 C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\build\generated\res\resValues\release
+com.faceplugin.facerecognition_flutter.app-packageReleaseResources-40 C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.faceplugin.facerecognition_flutter.app-packageReleaseResources-41 C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.faceplugin.facerecognition_flutter.app-merged-not-compiled-resources-42 C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\build\intermediates\merged-not-compiled-resources\release
+com.faceplugin.facerecognition_flutter.app-release-43 C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\build\intermediates\merged_res\release\mergeReleaseResources
+com.faceplugin.facerecognition_flutter.app-main-44 C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\src\main\res
+com.faceplugin.facerecognition_flutter.app-release-45 C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\android\app\src\release\res
+com.faceplugin.facerecognition_flutter.app-release-46 C:\Users\prosp\VERIFLOW\VERIFLOW FLUTTER\Veriflow-FaceRecognition-Flutter\facesdk_plugin\android\build\intermediates\packaged_res\release\packageReleaseResources

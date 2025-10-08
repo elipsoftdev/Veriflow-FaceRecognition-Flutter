@@ -1,11 +1,13 @@
+// facesdk_plugin/android/settings.gradle
 pluginManagement {
     def props = new Properties()
-    file("local.properties").withInputStream { props.load(it) }
+    def lp = file("local.properties")
+    if (!lp.exists()) throw new RuntimeException("No se encontró local.properties en ${lp.absolutePath}")
+    lp.withInputStream { props.load(it) }
     def flutterSdkPath = props.getProperty("flutter.sdk")
-    if (flutterSdkPath == null) {
-        throw new RuntimeException("flutter.sdk not set in local.properties")
-    }
+    if (flutterSdkPath == null) throw new RuntimeException("flutter.sdk not set in local.properties")
 
+    // Necesario para que Flutter registre su infraestructura Gradle
     includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
 
     repositories {
@@ -14,9 +16,10 @@ pluginManagement {
         gradlePluginPortal()
     }
 
+    // ⬇️ Versión fija de plugins (evita “must include a version number”)
     plugins {
-        id("com.android.library") version "8.7.2"
-        id("org.jetbrains.kotlin.android") version "2.1.0"
+        id("com.android.library") version "8.5.2"
+        id("org.jetbrains.kotlin.android") version "1.9.24"
     }
 }
 
@@ -25,6 +28,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
     }
 }
 
