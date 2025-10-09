@@ -1,21 +1,23 @@
+import java.util.Properties
+
 // =========================================================
 //  SETTINGS.GRADLE.KTS - Veriflow-FaceRecognition-Flutter
 // =========================================================
 
-// Gestión de plugins (debe ir SIEMPRE antes de cualquier include)
-pluginManagement {
-    // Cargar flutter.sdk desde local.properties sin usar apply{}
-    val props = java.util.Properties()
-    val lp = file("local.properties")
-    if (!lp.exists()) {
-        throw GradleException("No se encontró local.properties en ${lp.absolutePath}")
+fun loadFlutterSdkPath(): String {
+    val props = Properties()
+    val localProperties = file("local.properties")
+    if (!localProperties.exists()) {
+        throw GradleException("No se encontró local.properties en ${localProperties.absolutePath}")
     }
-    lp.inputStream().use { props.load(it) }
-
-    val flutterSdkPath = props.getProperty("flutter.sdk")
+    localProperties.inputStream().use { props.load(it) }
+    return props.getProperty("flutter.sdk")
         ?: throw GradleException("flutter.sdk not set in local.properties")
+}
 
-    // Incluye las herramientas del SDK de Flutter
+val flutterSdkPath = loadFlutterSdkPath()
+
+pluginManagement {
     includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
 
     repositories {
@@ -26,12 +28,13 @@ pluginManagement {
 
     // 🔧 Definir versiones globales de plugins
     plugins {
-    id("dev.flutter.flutter-plugin-loader") version "1.0.0"
-    id("com.android.application") version "8.5.2" apply false
-    id("com.android.library") version "8.5.2" apply false
-    id("org.jetbrains.kotlin.android") version "1.9.24" apply false
+        id("dev.flutter.flutter-plugin-loader") version "1.0.0"
+        id("dev.flutter.flutter-gradle-plugin") version "1.0.0" apply false
+        id("com.android.application") version "8.7.2" apply false
+        id("com.android.library") version "8.7.2" apply false
+        id("org.jetbrains.kotlin.android") version "1.9.24" apply false
+    }
 }
-
 
 // Repositorios compartidos para todos los subproyectos
 dependencyResolutionManagement {
