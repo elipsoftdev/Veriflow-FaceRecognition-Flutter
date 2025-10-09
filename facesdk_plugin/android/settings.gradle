@@ -1,13 +1,23 @@
 // facesdk_plugin/android/settings.gradle
-pluginManagement {
-    def props = new Properties()
-    def lp = file("local.properties")
-    if (!lp.exists()) throw new RuntimeException("No se encontró local.properties en ${lp.absolutePath}")
-    lp.withInputStream { props.load(it) }
-    def flutterSdkPath = props.getProperty("flutter.sdk")
-    if (flutterSdkPath == null) throw new RuntimeException("flutter.sdk not set in local.properties")
+import java.util.Properties
 
-    // Necesario para que Flutter registre su infraestructura Gradle
+def loadFlutterSdkPath() {
+    def props = new Properties()
+    def localProperties = file("local.properties")
+    if (!localProperties.exists()) {
+        throw new GradleException("No se encontró local.properties en ${localProperties.absolutePath}")
+    }
+    localProperties.withInputStream { props.load(it) }
+    def flutterSdk = props.getProperty("flutter.sdk")
+    if (flutterSdk == null) {
+        throw new GradleException("flutter.sdk not set in local.properties")
+    }
+    return flutterSdk
+}
+
+def flutterSdkPath = loadFlutterSdkPath()
+
+pluginManagement {
     includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
 
     repositories {
@@ -16,10 +26,11 @@ pluginManagement {
         gradlePluginPortal()
     }
 
-    // ⬇️ Versión fija de plugins (evita “must include a version number”)
     plugins {
-        id("com.android.library") version "8.5.2"
-        id("org.jetbrains.kotlin.android") version "1.9.24"
+        id("dev.flutter.flutter-plugin-loader") version "1.0.0"
+        id("dev.flutter.flutter-gradle-plugin") version "1.0.0" apply false
+        id("com.android.library") version "8.7.2" apply false
+        id("org.jetbrains.kotlin.android") version "1.9.24" apply false
     }
 }
 
